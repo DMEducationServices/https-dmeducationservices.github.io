@@ -1,0 +1,117 @@
+/* Root Colours from Logo */
+:root {
+  --primary-blue: #0047BA;
+  --accent-red: #EF4444;
+  --accent-purple: #9B5DE5;
+  --accent-teal: #06B6D4;
+  --smile-black: #111111;
+  --background-yellow: #FFD93D;
+  --text-dark: #1F2937;
+  --font-family: 'Poppins', 'Segoe UI', sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--background-yellow);
+  color: var(--primary-blue);
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background-color: var(--primary-blue);
+  padding: 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: var(--accent-teal);
+}
+
+.hero {
+  background-color: var(--accent-purple);
+  color: #fff;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+section {
+  padding: 2rem 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section-title {
+  color: var(--primary-blue);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.features {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.feature-card {
+  background-color: #f3f4f6;
+  border-left: 5px solid var(--accent-teal);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  background-color: var(--primary-blue);
+  color: #fff;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+button {
+  background-color: var(--accent-red);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--primary-blue);
+}
+
+iframe {
+  border: none;
+  width: 100%;
+  height: 600px;
+  margin-top: 1rem;
+}
